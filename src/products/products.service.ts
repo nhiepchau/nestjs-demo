@@ -73,8 +73,8 @@ export class ProductsService {
     // Add the new product to the array
     this.products.push({
       id: nextId,
-      title: prodTitle,
-      description: prodDesc,
+      username: prodTitle,
+      activity: prodDesc,
     });
 
     return nextId;
@@ -104,8 +104,8 @@ export class ProductsService {
     const updatedProduct = this.products[productIndex];
 
     // Update the product's properties
-    updatedProduct.description = prodDesc ?? updatedProduct.description;
-    updatedProduct.title = prodTitle ?? updatedProduct.title;
+    updatedProduct.activity = prodDesc ?? updatedProduct.activity;
+    updatedProduct.username = prodTitle ?? updatedProduct.username;
 
     this.products[productIndex] = updatedProduct;
     return { ...this.products[productIndex] };

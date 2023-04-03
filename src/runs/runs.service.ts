@@ -53,13 +53,13 @@ export class RunsService {
     }
     return { ...run };
   }
-  createRun(description: string, time: number) {
+  createRun(username: string, time: number) {
     const lastId = this.runs[this.runs.length - 1].id;
     const nextId = (parseInt(lastId) + 1).toString();
 
     this.runs.push({
       id: nextId,
-      description,
+      username,
       time,
     });
 

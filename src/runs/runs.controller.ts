@@ -25,11 +25,12 @@ export class RunsController {
   }
 
   @Post()
+  // eslint-disable-next-line prettier/prettier
   createRun(
     @Body('time') time: number,
-    @Body('username') description: string,
+    @Body('username') username: string,
   ) {
-    return this.runsService.createRun(description, time);
+    return this.runsService.createRun(username, time);
   }
 
   @Delete(':id')
