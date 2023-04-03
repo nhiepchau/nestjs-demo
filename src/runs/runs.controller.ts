@@ -27,7 +27,7 @@ export class RunsController {
   @Post()
   createRun(
     @Body('time') time: number,
-    @Body('description') description: string,
+    @Body('username') description: string,
   ) {
     return this.runsService.createRun(description, time);
   }

@@ -29,8 +29,8 @@ export class ProductsController {
   // POST /products
   @Post()
   addProduct(
-    @Body('title') prodTitle: string,
-    @Body('description') prodDesc: string,
+    @Body('username') prodTitle: string,
+    @Body('activity') prodDesc: string,
   ) {
     const generatedId = this.productsService.insertProduct(prodTitle, prodDesc);
     return { id: generatedId };
@@ -46,8 +46,8 @@ export class ProductsController {
   // PATCH /products/:id
   @Patch(':id')
   updateProduct(
-    @Body('title') prodTitle: string,
-    @Body('description') prodDesc: string,
+    @Body('username') prodTitle: string,
+    @Body('activity') prodDesc: string,
     @Param('id') id: string,
   ) {
     return this.productsService.updateProduct(id, prodTitle, prodDesc);

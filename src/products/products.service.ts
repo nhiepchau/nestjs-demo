@@ -6,18 +6,38 @@ export class ProductsService {
   private products: Product[] = [
     {
       id: '1',
-      title: 'Product 1',
-      description: 'This is product 1',
+      username: 'Chau',
+      activity: 'visited',
     },
     {
       id: '2',
-      title: 'Product 2',
-      description: 'This is product 2',
+      username: 'Nhu',
+      activity: 'downloaded log',
     },
     {
       id: '3',
-      title: 'Product 3',
-      description: 'This is product 3',
+      username: 'Hieu',
+      activity: 'read info',
+    },
+    {
+      id: '4',
+      username: 'Vy',
+      activity: 'updated info',
+    },
+    {
+      id: '5',
+      username: 'Bao Nguyen',
+      activity: 'do nothing',
+    },
+    {
+      id: '6',
+      username: 'Duc',
+      activity: 'edited',
+    },
+    {
+      id: '7',
+      username: 'Viet',
+      activity: 'write',
     },
   ];
 

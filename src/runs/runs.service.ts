@@ -7,17 +7,37 @@ export class RunsService {
     {
       id: '1',
       time: 100,
-      description: 'Run alone',
+      username: 'Duc',
     },
     {
       id: '2',
       time: 200,
-      description: 'Run with friend',
+      username: 'Chau',
     },
     {
       id: '3',
       time: 250,
-      description: 'Run with friends',
+      username: 'Viet',
+    },
+    {
+      id: '4',
+      time: 650,
+      username: 'Nhu',
+    },
+    {
+      id: '5',
+      time: 50,
+      username: 'Hieu',
+    },
+    {
+      id: '6',
+      time: 190,
+      username: 'Vy',
+    },
+    {
+      id: '7',
+      time: 890,
+      username: 'Bao Nguyen',
     },
   ];
   getAllRuns() {
